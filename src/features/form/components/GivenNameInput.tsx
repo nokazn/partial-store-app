@@ -1,7 +1,7 @@
 import { useRecoilState } from 'recoil';
 
-import { withGivenName } from '../../../store';
-import { Input } from '../../parts/Input';
+import { withGivenName } from '../store';
+import { Input } from '../../../components/parts/Input';
 
 import type { ChangeEventHandler, FC } from 'react';
 

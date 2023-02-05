@@ -1,6 +1,6 @@
 import { useRecoilState } from 'recoil';
 
-import { withEmail } from '../../../store';
+import { withEmail } from '../store';
 import { Input } from '../../../components/parts/Input';
 
 import type { ChangeEventHandler, FC } from 'react';

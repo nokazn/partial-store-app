@@ -1,14 +1,17 @@
 import { useRecoilValue } from 'recoil';
-import { countState } from '../store';
+import { countState } from '../features/count';
 
 import type { FC, ReactNode } from 'react';
+import { CommonSchema } from '../features/common';
+import { useCommonProps } from './hooks';
 
 type Props = {
   children: ReactNode;
 };
 
-export const DefaultLayout: FC<Props> = (props) => {
-  const { children } = props;
+export const DefaultLayout: FC<Props & { common?: CommonSchema }> = (props) => {
+  const { children, common } = props;
+  useCommonProps({ common });
   const count = useRecoilValue(countState);
   return (
     <>

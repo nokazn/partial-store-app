@@ -6,7 +6,7 @@ import { EmailInput } from '../../features/form/components/EmailInput';
 
 import { FamilyNameInput, GivenNameInput, SexRadio } from '../../features/form/components';
 import { Layout } from '../../layouts';
-import { countState } from '../../store';
+import { countState } from '../../features/count';
 
 const Home: NextPageWithLayout = () => {
   const id = useId();
@@ -46,6 +46,6 @@ const Home: NextPageWithLayout = () => {
   );
 };
 
-Home.getLayout = Layout('a');
+Home.getLayout = Layout();
 
 export default Home;

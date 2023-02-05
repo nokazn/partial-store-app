@@ -9,12 +9,6 @@ import { formState } from '../../features/form';
 const ShoppingConfirm: NextPageWithLayout = () => {
   const form = useRecoilValue(formState);
 
-  useEffect(() => {
-    return () => {
-      console.log('unmounted1');
-    };
-  }, []);
-
   return (
     <>
       <h1>確認</h1>
@@ -37,6 +31,6 @@ const ShoppingConfirm: NextPageWithLayout = () => {
   );
 };
 
-ShoppingConfirm.getLayout = Layout('a');
+ShoppingConfirm.getLayout = Layout();
 
 export default ShoppingConfirm;

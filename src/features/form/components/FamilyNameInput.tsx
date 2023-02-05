@@ -1,6 +1,6 @@
 import { useRecoilState } from 'recoil';
 
-import { withFamilyName } from '../../../store';
+import { withFamilyName } from '../store';
 import { Input } from '../../../components/parts/Input';
 
 import type { ChangeEventHandler, FC } from 'react';
