@@ -25,7 +25,7 @@ const getCommonData = async () => {
           age: 27,
         },
         auth: {
-          isLoggedIn: true,
+          isLoggedIn: false,
         },
       },
       1500,

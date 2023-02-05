@@ -26,7 +26,7 @@ const Home: NextPageWithLayout = () => {
       <button onClick={incrementCount}>+</button>
       <button onClick={decrementCount}>-</button>
       <div>カウント： {count}</div>
-      {common.auth.isLoggedIn && <p>ログイン済み</p>}
+      {common.auth.isLoggedIn && <p>{common.user.name}さんとしてログイン済みです。</p>}
     </main>
   );
 };
